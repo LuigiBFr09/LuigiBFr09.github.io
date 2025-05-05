@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulários</title>
+</head>
+<style type="text/css">
+.roxinho{
+	color: white;
+	background-color: darkred;
+	display: inline-block;
+	border-radius: 15px 15px 15px 15px;
+	border-color: black;
+	border-width: 2px;
+}
+
+.roxo{
+	color: white;
+	background-color: darkred;
+	display: inline-block;
+	border-radius: 10px 10px 10px 10px;
+	border-color: black;
+	border-width: 2px;
+}
+
+label{
+	color: white;
+}
+
+.square {
+display: inline-block;
+background-color: #030C36;
+padding: 10px;
+border: 3px #2f003f;
+border-radius: 10px; /* Optional: Adds rounded corners */
+}
+	</style>
+<body style="background: radial-gradient(circle,rgba(107, 24, 16, 1) 34%, rgba(4, 20, 82, 1) 76%);">
+	<center>
+		<img src="https://brandlogos.net/wp-content/uploads/2022/05/red_bull_racing-logo-brandlogos.net_.png" width="50%" align="center">
+<br>
+<p class="roxinho"  style="font-size: 49px;">FORMULÁRIOS</p>
+<br>
+<p class="roxinho"  style="font-size: 29px;">Cadastro de Funcionários </p>	
+<br>
+	<form class="square" method="POST">
+			<fieldset>
+				<legend class="roxinho">Dados Pessoais</legend>
+			<label for="nome">Nome:</label><br>
+			<input type="text" class="roxinho" required minlength="3" maxlength="50" spellcheck="true" placeholder="Informe seu nome completo" size="60" name="nome" id="nome">
+<br><br><br>
+			<label for="idade">Idade:</label><br>
+			<input type="number" class="roxinho" required min="1" max="100" spellcheck="true" placeholder="1-100" size="50" name="idade" id="idade">
+<br><br><br>
+			<label for="sexo">Sexo</label><br>
+			<input type="radio" name="sexo" id="sexo" value="F" class="roxinho"><span style="color: white;">F</span>
+			<input type="radio" name="sexo" id="sexo" value="M"><span style="color: white;">M</span>
+<br><br><br>
+			<label for="foto">Foto:</label><br>
+			<input type="file" name="foto" accept="image/png" class="roxinho">
+<br><br><br>
+		<label>Data de nascimento:</label>
+		<input type="date" name="data" class="roxinho">
+		<br><br><br>
+					<label for="login">Login:</label><br>
+			<input type="text" class="roxinho" required minlength="8" maxlength="15" spellcheck="true" placeholder="Informe o login" size="15" name="nome" id="nome">
+<br><br><br>
+			<label for="senha">Senha:</label><br>
+			<input type="password" class="roxinho" maxlength="50"S spellcheck="true" placeholder="Senha" size="30" name="senha" id="senha">
+</fieldset>
+
+<br><br><br>
+<fieldset>
+	<legend class="roxinho">Dados Profissionais</legend>
+<br><br>
+			<label for="cor">Cor do Uniforme</label><br>
+			<input type="color" name="corfav" id="corfav" value="corf" class="roxinho" list="cores">
+			<datalist id="cores">
+				<option value="#FF0000">Red</option>
+				<option value="#0037FF">Blue</option>
+				<option value="#F5F57D">Yellow</option>
+			</datalist>
+<br><br><br>
+			<label for="cargo">Cargo:</label><br>
+			<input type="text" name="cargo" id="cargo" value="Professor(a)" class="roxinho">
+<br><br><br>
+			<label for="capacitacao">Quanto você se considera preparado para função:</label><br>
+			<span style="color: white;">0</span><input type="range" name="cap" id="cap" value="0" class="roxinho" min="0" max="10"><span style="color: white;">10</span>
+<br><br><br>
+			<label for="i">Período de Trabalho</label><br>
+			<input type="checkbox" name="m" id="m" ><span style="color: white;">Matutino</span>
+			<input type="checkbox" name="v" id="v"><span style="color: white;">Vespertino</span>
+			<input type="checkbox" name="i" id="i"><span style="color: white;">Integral</span>
+			<input type="checkbox" name="n" id="n"><span style="color: white;">Noturno</span>
+			<br><br>
+			<label>Curso</label>
+			<select name="curso" id="curso" class="roxinho">
+				<option>Agrimensura</option>
+				<option>Desenvolvimento de Sistemas</option>
+				<option>Qualidade</option>
+				<option>Enfermagem</option>
+				<option>Mecânica</option>
+				<option>Prótese</option>
+				<option>Edificações</option>
+			</select>
+<br><br>
+			<label for="disc">Disciplinas preferidas</label>
+			<br>
+			<select name="disc" id="disc" class="roxinho" size="3" multiple>
+				<option>Banco de Dados</option>
+				<option>DAW</option>
+				<option>Fundamentos de Informática</option>
+				<option>LP</option>
+				<option>SORD</option>
+			</select><br>
+			<small class="roxinho">CTRL+CLICK  para selecionar vários</small>
+			<br><br><br>
+						<label>Formação</label>
+			<select name="formação" id="formação" class="roxinho">
+					<optgroup label="Graduação">
+						<option>Engenharia</option>
+						<option>Tecnologia</option>
+						<option>Humanas</option>
+						<option>Exatas</option>
+						<option>Biológicas</option>
+					</optgroup>
+						<optgroup label="Pós-Graduação">
+						<option>Mestrado</option>
+						<option>Doutorado</option>
+						<option>Pós Doc</option>
+					</optgroup>
+			</select>
+			<br><br>
+			<label>Conhecimento:</label>
+			<input type="text" name="conhecimento" id="conhecimento" list="lista-conhecimento">
+			<datalist id="lista-conhecimento">
+				<option value="HTML5">HTML5</option>
+				<option value="HTML4">HTML4</option>
+				<option value="CSS3">CSS3</option>
+				<option value="PHP">PHP</option>
+			</datalist>
+</fieldset>
+<br><br><br>
+			<fieldset>
+				<legend class="roxinho">Datas</legend>
+<br><br>
+			<label for="dataNas">Data e hora do cadastro</label>
+			<input type="datetime-local" name="" class="roxinho">
+<br><br>
+			<label for="dataNas">Hora do cadastro</label>
+			<input type="time" class="roxinho">
+
+<br><br>		
+			<label for="mes">Mês de férias</label>
+			<input type="month" name="mes" id="mes" class="roxinho">
+			<br><br>
+			<label for="mes">Semana</label>
+			<input type="week" name="semana" id="semana" class="roxinho">
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend class="roxinho">Formas de contato</legend>
+
+				<label for="msg">Mensagem</label><br>
+				<textarea id="msg" name="msg" class="roxinho" cols="30" rows="5" minlength="20" maxlength="100" placeholder="Digite sua mensagem com 20 a 100 caracteres"></textarea>
+				<br><br>
+				<label for="mail">E-mail</label><br>
+				<input type="email" name="email" id="email" class="roxinho">
+				<br><br>
+				<label for="site">Site</label><br>
+				<input type="url" name="site" id="site" class="roxinho">
+				<br><br>
+				<label for="busca">Busca</label><br>
+				<input type="search" name="busca" id="busca" class="roxinho">
+			</fieldset>
+			<br><br>
+						<input type="submit" name="btn" value="Cadastrar" class="roxo">
+						<input type="reset" name="btnReset" value="Resetar" class="roxo">
+						<input type="button" name="btnButton" value="Botão" class="roxo"
+						onclick="alert('Verstappen>Hamilton');">
+	</form>
+	</center>
+</body>
+</html>
