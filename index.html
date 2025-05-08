@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+.peb{
+	color: white;
+	font-family: "monospace;", Lucida Console;
+	width: 600px;
+	font-size: 40px;
+}
+
+.html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.zoom{
+	transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+.item1 {
+  grid-area: header;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+  color: white;
+	font-family: "monospace;", Lucida Console;
+}
+
+.item2 {
+  grid-area: menu;
+  	color: white;
+	font-family: "monospace;", Lucida Console;
+	font-size: 40px;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
+
+
+
+</style>
+<body style="background: linear-gradient(129deg,rgba(0, 0, 0, 1) 0%, rgba(31, 31, 30, 1) 55%)";>
+	<center>
+		<div class="item1">
+	<h1>Created by </h1><a href="https://www.roblox.com/pt/users/1509946900/profile" target="blank_"><h1 class="zoom">Dev_Lu09</a></h1>
+</a>
+</div>
+<img src="LOGO.png" align="center" width="80%" style="padding: 0;">
+<div class="item2">
+	<p>Roblox Development Studio</p>
+</div>
+<br><br><br>
+<div class="item3">
+	<a href="Mech Tycoon.html"><img src="logo_mech.png"  class="zoom" width="30%"></a>
+	<a href="FaciltyBB.html"><img src="logo_facility.png"  class="zoom" width="30%"></a>
+	<a href="PirateAdv.html"><img src="logo_pirate.png"  class="zoom" width="30%"></a>
+</div>
+<br><br><br>
+</div>
+<a href="https://www.roblox.com/pt/home" target="blank_"><img src="roblox.png" width="50%"></a>
+<br><br>
+<div class="item5">
+<a href="https://x.com/312Luigi"><img src="x.png" width="40px" class="zoom"></a>
+<a href="https://www.roblox.com/pt/users/1509946900/profile"><img src="roblox2.webp" width="40px" class="zoom"></a>
+</div>
+</center>
+</body>
+</html>
