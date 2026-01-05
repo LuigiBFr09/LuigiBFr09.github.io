@@ -40,6 +40,7 @@ button{
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+    font-family: "Iceland", sans-serif;
 }
 button:hover{
     background-color: hsl(0, 0%, 40%);
@@ -144,4 +145,5 @@ h1 {
   100% {
     transform:translateX(25%);
   }
+
 }
