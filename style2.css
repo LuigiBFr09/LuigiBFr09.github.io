@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+background: linear-gradient(119deg,rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 100%);}
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 1px 1px 20px white;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.operator-btn{
+    background-color: hsl(276, 100%, 22%);
+}
+.operator-btn:hover{
+    background-color: hsl(266, 94%, 32%);
+}
+.operator-btn:active{
+    background-color: hsl(256, 99%, 33%);
+}
+
+@media (max-width: 600px) {
+    #calculator {
+        max-width: 90%;
+        border-radius: 10px;
+    }
+
+    #display {
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    #keys {
+        gap: 8px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    #display {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.7rem;
+    }
+}
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(0, 0, 0) 50%, rgb(29, 29, 29) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
